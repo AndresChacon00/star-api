@@ -1,17 +1,17 @@
-from flask import Flask, request, jsonify
-import pandas as pd
-import tensorflow as tf
-from sklearn.preprocessing import StandardScaler
-import numpy as np
-import joblib
+#from flask import Flask, request, jsonify
+#import pandas as pd
+#import tensorflow as tf
+#from sklearn.preprocessing import StandardScaler
+#import numpy as np
+#import joblib
 
 app = Flask(__name__)
 
 # Cargar el modelo
-model = tf.keras.models.load_model("classificatorModel.h5")
+#model = tf.keras.models.load_model("classificatorModel.h5")
 
 # Cargar el scaler
-scaler = joblib.load('scaler.pkl')
+#scaler = joblib.load('scaler.pkl')
 
 @app.route('/')
 def home():
